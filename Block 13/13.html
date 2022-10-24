@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML 13.1-13.5</title>
+        <style>
+            #ex {
+                display: flex;
+                flex-direction: column;
+            }
+            textarea, input {
+                margin-top: 15px;
+                width: 180px;
+                height: 40px;
+            }
+            textarea.sq {
+                width: 300px;
+                height: 200px;
+            }
+            textarea.bigsq {
+                width: 300px;
+                height: 200px;
+                padding: 20px;
+            }
+            .fr1 {
+                width: 300px;
+                padding: 10px;
+                display: block;
+                margin-bottom: 10px;
+                font-size: 18px;
+                font-family: Arial;
+            }
+            .fr1 textarea {
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="ex">
+            <textarea></textarea>
+            <textarea>text</textarea>
+            <textarea class="sq">text</textarea>
+            <textarea class="bigsq">text</textarea>
+            <form class="fr1" action="" method="get">
+                <input value="text"><br><br>
+                <input value="text"><br><br>
+                <textarea>text</textarea>
+            </form>
+        </div>
+    </body>
+</html>
