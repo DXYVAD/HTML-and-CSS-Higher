@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML 34.7-34.9</title>
+        <style>
+            @keyframes anim7 {
+                from {
+                    width: 100px;
+                }
+                to {
+                    width: 700px;
+                }
+            }
+            .anim7 {
+                margin-top: 30px;
+                margin-left: 30px;
+                border: 1px solid red;
+                height: 50px;
+                animation: anim7 2s infinite ease alternate;
+                animation-play-state: paused;
+            }
+            .anim7:hover {
+                animation-play-state: running;
+            }
+            @keyframes anim8 {
+                from {
+                    width: 100px;
+                }
+                to {
+                    width: 700px;
+                }
+            }
+            .butt {
+                margin: 30px 30px;
+                border: 1px solid green;
+                width: 50px;
+                height: 50px;
+            }
+            .anim8 {
+                margin-top: 30px;
+                margin-left: 30px;
+                border: 1px solid red;
+                height: 50px;
+                animation: anim8 2s infinite ease alternate;
+                animation-play-state: paused;
+            }
+            .butt:hover + .anim8 {
+                animation-play-state: running;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="anim7"></div>
+        <div class="butt"></div>
+        <div class="anim8"></div>
+    </body>
+</html>

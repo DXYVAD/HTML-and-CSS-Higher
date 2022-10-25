@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML 36.1-36.10</title>
+        <style>
+            .trans1, .trans2, .trans3, .trans4, .trans5, .trans6, .trans7, .trans8, .trans9 {
+                margin: 80px;
+                width: 100px;
+                height: 100px;
+                border: 1px solid red;
+                transition: transform 1s ease;
+            }
+            .trans1 {
+                transform-origin: right bottom;
+            }
+            .trans1:hover {
+                transform: rotate(45deg);
+            }
+            .trans2 {
+                transform-origin: left bottom;
+            }
+            .trans2:hover {
+                transform: rotate(45deg);
+            }
+            .trans3 {
+                transform-origin: center center;
+            }
+            .trans3:hover {
+                transform: rotate(45deg);
+            }
+            .trans4 {
+                transform-origin: right top;
+            }
+            .trans4:hover {
+                transform: rotate(-45deg);
+            }
+            .trans5 {
+                transform-origin: right bottom;
+            }
+            .trans5:hover {
+                transform: scale(1.5);
+            }
+            .trans6 {
+                transform-origin: right top;
+            }
+            .trans6:hover {
+                transform: scale(1.5);
+            }
+            .trans7 {
+                transform-origin: right bottom;
+            }
+            .trans7:hover {
+                transform: skew(45deg);
+            }
+            .trans8 {
+                transform-origin: right top;
+            }
+            .trans8:hover {
+                transform: skew(45deg);
+            }
+            .trans9 {
+                transform-origin: left bottom;
+            }
+            .trans9:hover {
+                transform: skew(45deg);
+            }
+            .trans10parent {
+                margin: 300px;
+                border: 1px solid red;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+            .trans10child {
+                margin: 0 auto;
+                position: relative;
+                bottom: 150px;
+                border: 1px solid red;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                animation: rotat 8s infinite linear,
+                           blin 6s infinite ease;
+                transform-origin: 25px 250px;
+            }
+            @keyframes rotat {
+                from {
+                    
+                }
+                to {
+                    transform: rotate(1turn);
+                }
+            }
+            @keyframes blin {
+                0% {
+                    background-color: white;
+                }
+                50% {
+                    background-color: red;
+                }
+                100% {
+                    background-color: white;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="trans1"></div>
+        <div class="trans2"></div>
+        <div class="trans3"></div>
+        <div class="trans4"></div>
+        <div class="trans5"></div>
+        <div class="trans6"></div>
+        <div class="trans7"></div>
+        <div class="trans8"></div>
+        <div class="trans9"></div>
+        <div class="trans10parent"><div class="trans10child"></div></div>
+        
+    </body>
+</html>

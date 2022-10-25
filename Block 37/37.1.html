@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML 37.1</title>
+        <style>
+            #menu {
+                width: 600px;
+                height: 200px;
+                border: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            #menu a {
+                text-decoration: none;
+                padding: 15px;
+                margin: 3px;
+                color: blue;
+                border: 1px solid blue;
+                transition: transform 1s ease;
+            }
+            #menu a:hover, #menu a.active {
+                transform: rotate(10deg) scale(1.1);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div id="menu">
+                    <a href="#">link text 1</a>
+                    <a href="#" class="active">link text 2</a>
+                    <a href="#">link text 3</a>
+                    <a href="#">link text 4</a>
+                    <a href="#">link text 5</a>
+                </div>
+            </nav>
+        </header>
+    </body>
+</html>
