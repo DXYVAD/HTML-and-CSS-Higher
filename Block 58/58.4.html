@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML 58.4</title>
+        <style>
+            .parent {
+                display: flex;
+                flex-wrap: wrap;
+                width: 700px;
+                border: 1px solid red;
+            }
+            .child {
+                box-sizing: border-box;           
+                height: 100px;
+                width: calc((100% - 200px) / 5);
+                margin-right: 50px;
+                margin-bottom: 50px;
+                border: 1px solid green;
+            }
+            .child:nth-child(5n) {
+                margin-right: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+        </div>
+    </body>
+</html>
